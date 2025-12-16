@@ -1,0 +1,47 @@
+.page-header {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #555;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-info,
+.contact-message {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.contact-info h2,
+.contact-message h2 {
+  margin-top: 0;
+  color: #1a3d6d;
+}
+
+.contact-info p,
+.contact-message p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
