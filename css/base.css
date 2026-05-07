@@ -1,0 +1,126 @@
+:root {
+  --color-primary: #FF5722; /* Orange */
+  --color-secondary: #333; /* Noir/Gris foncé */
+  --color-light: #f4f4f4; /* Blanc cassé */
+  --color-white: #ffffff;
+  --color-dark: #222;
+
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 80px;
+
+  --container-width: 1200px; /* Adjusted max-width for container */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-secondary);
+  background-color: var(--color-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+p {
+  font-size: 1rem; /* Base paragraph font size */
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #e64a19; /* Un orange légèrement plus foncé */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* BOUTONS MODERNES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px; /* Ajusté pour le nouveau design */
+  border-radius: 5px; /* Plus simple */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Simplifié la transition */
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: #e64a19; /* Un orange légèrement plus foncé */
+  transform: translateY(-2px); /* Effet léger au survol */
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background-color: #25D366; /* Vert WhatsApp */
+  color: var(--color-white);
+  border: 1px solid #25D366;
+  gap: 8px; /* Espace pour l'icône */
+}
+
+.btn-whatsapp:hover {
+  background-color: #1DA851;
+  transform: translateY(-2px);
+}
+
+.btn-phone {
+  background-color: var(--color-secondary); /* Couleur sombre pour le bouton téléphone */
+  color: var(--color-white);
+  border: 1px solid var(--color-secondary);
+}
+
+.btn-phone:hover {
+  background-color: var(--color-dark);
+  transform: translateY(-2px);
+}
+
+/* UTILS - Mise à jour des classes d'espacement pour utiliser les variables */
+.text-center { text-align: center; }
+.section-padding { padding: var(--spacing-xl) 0; }
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }

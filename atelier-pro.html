@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VolcanoTech | Atelier Pro</title>
+
+  <meta name="description"
+        content="Atelier Pro est l’application offline-first de VolcanoTech pour gérer les ateliers de couture : commandes, retouches, caisse et tableaux de bord.">
+  <meta name="theme-color" content="#ff5722">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atelier Pro | Gestion d’atelier couture offline-first">
+  <meta property="og:description" content="Commandes, retouches, caisse, clients, stock et tableaux de bord dans une application moderne pour atelier de couture.">
+  <meta property="og:image" content="assets/marketing-screenshots/desktop-01-tableau-de-bord.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/atelier-pro.css">
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="navbar container" aria-label="Navigation principale">
+    <a href="index.html" class="logo brand-mark" aria-label="VolcanoTech - Accueil">
+      <img src="assets/images/volcanotech-logo-optimized.png" alt="VolcanoTech" class="brand-logo" fetchpriority="high">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="atelier-pro.html" aria-current="page">Atelier Pro</a></li>
+      <li><a href="a_propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-more">
+        <button type="button" class="nav-more-toggle" aria-expanded="false">Plus</button>
+        <ul class="nav-submenu">
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="livres.html">Documents</a></li>
+          <li><a href="tutoriels.html">Guides</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <a href="contact.html" class="btn btn-primary nav-cta">Demander une démo</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero product-hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          Produit phare VolcanoTech
+        </p>
+
+        <h1>Atelier Pro, la gestion d’atelier couture en mode premium.</h1>
+
+        <p class="hero-text">
+          Centralisez les commandes, retouches, clients, paiements et tableaux de bord
+          dans un outil moderne, mobile-first et pensé pour fonctionner hors ligne.
+        </p>
+
+        <div class="hero-actions" aria-label="Actions principales">
+          <a href="contact.html" class="btn btn-primary">Demander une démo</a>
+          <a href="#captures" class="btn btn-outline">Voir les captures</a>
+        </div>
+
+        <div class="trust-row" aria-label="Points forts Atelier Pro">
+          <span>Commandes</span>
+          <span>Caisse</span>
+          <span>Offline-first</span>
+        </div>
+      </div>
+
+      <div class="hero-visual product-device-stage" aria-label="Aperçu réel d’Atelier Pro">
+        <a href="#captures" class="laptop-frame media-link" aria-label="Voir les captures desktop Atelier Pro">
+          <div class="window-bar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img src="assets/marketing-screenshots/desktop-01-tableau-de-bord.png"
+               alt="Tableau de bord desktop Atelier Pro"
+               fetchpriority="high" decoding="async">
+        </a>
+
+        <a href="#captures" class="mobile-frame media-link" aria-label="Voir les captures mobile Atelier Pro">
+          <img src="assets/marketing-screenshots/mobile-01-tableau-de-bord.png"
+               alt="Tableau de bord mobile Atelier Pro"
+               fetchpriority="high" decoding="async">
+        </a>
+
+        <div class="floating-card revenue-card">
+          <span>Disponibilité</span>
+          <strong>Hors ligne</strong>
+        </div>
+
+        <div class="floating-card sync-card">
+          <span>Sync intelligente</span>
+          <strong>Auto</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-strip">
+    <div class="container proof-grid">
+      <article>
+        <span>Offline-first</span>
+        <strong>Travaillez même sans connexion stable</strong>
+        <a href="#captures" class="inline-card-link">Voir le produit</a>
+      </article>
+      <article>
+        <span>Mobile + desktop</span>
+        <strong>Une expérience adaptée au téléphone et au bureau</strong>
+        <a href="#captures" class="inline-card-link">Voir les écrans</a>
+      </article>
+      <article>
+        <span>Gestion complète</span>
+        <strong>Commandes, retouches, caisse, clients et stock</strong>
+        <a href="contact.html" class="inline-card-link">Demander une démo</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section product-section">
+    <div class="container product-grid">
+      <div class="product-copy">
+        <span class="section-kicker">Fonctionnalités</span>
+        <h2>Tout ce qu’un atelier doit suivre, dans une interface simple.</h2>
+        <p>
+          Atelier Pro transforme les tâches quotidiennes en processus clairs :
+          chaque commande, paiement et retouche devient plus facile à suivre.
+        </p>
+
+        <div class="feature-list">
+          <span>Commandes</span>
+          <span>Retouches</span>
+          <span>Caisse</span>
+          <span>Synchronisation</span>
+          <span>Tableaux de bord</span>
+          <span>Mobile-first</span>
+          <span>Offline-first</span>
+        </div>
+      </div>
+
+      <div class="product-showcase real-product-showcase" aria-label="Écrans principaux Atelier Pro">
+        <figure class="analytics-panel screenshot-panel">
+          <img src="assets/marketing-screenshots/desktop-02-commandes.png"
+               alt="Gestion des commandes dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>
+            <span>Commandes</span>
+            <strong>Suivi clair des travaux</strong>
+            <a href="#captures" class="card-link">Voir plus</a>
+          </figcaption>
+        </figure>
+
+        <figure class="screenshot-card real-screenshot-card">
+          <img src="assets/marketing-screenshots/desktop-04-caisse.png"
+               alt="Caisse et argent de l’atelier dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>
+            <span>Caisse</span>
+            <strong>Avances, paiements et résultats</strong>
+            <a href="#captures" class="card-link">Voir plus</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section workflow-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Workflow atelier</span>
+        <h2>De la commande à la livraison, tout reste visible.</h2>
+        <p>Atelier Pro aide le responsable à suivre chaque étape importante sans carnet dispersé, sans oubli et sans confusion dans la caisse.</p>
+      </div>
+
+      <div class="workflow-grid">
+        <article>
+          <span>01</span>
+          <h3>Créer la commande</h3>
+          <p>Enregistrez le client, les mesures, les articles, les avances et les délais.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Suivre le travail</h3>
+          <p>Visualisez les commandes en cours, les retouches et les priorités de la journée.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Encaisser proprement</h3>
+          <p>Gardez une trace claire des paiements, avances, soldes et mouvements de caisse.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Piloter l’activité</h3>
+          <p>Consultez les tableaux de bord pour prendre de meilleures décisions rapidement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section screens-section" id="captures">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Captures du produit</span>
+        <h2>Une interface complète pour gérer l’atelier au quotidien.</h2>
+        <p>Les écrans clés d’Atelier Pro montrent le suivi des commandes, dossiers clients, retouches, caisse, facturation et stock.</p>
+      </div>
+
+      <div class="screens-grid">
+        <figure class="screen-card screen-card-large">
+          <img src="assets/marketing-screenshots/desktop-01-tableau-de-bord.png"
+               alt="Tableau de bord Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>Tableau de bord</figcaption>
+          <a href="contact.html" class="screen-link">Demander une démo</a>
+        </figure>
+
+        <figure class="screen-card">
+          <img src="assets/marketing-screenshots/desktop-03-dossiers.png"
+               alt="Dossiers clients et mesures dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>Dossiers clients</figcaption>
+          <a href="contact.html" class="screen-link">Voir en démo</a>
+        </figure>
+
+        <figure class="screen-card">
+          <img src="assets/marketing-screenshots/desktop-07-retouches.png"
+               alt="Gestion des retouches dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>Retouches</figcaption>
+          <a href="contact.html" class="screen-link">Voir en démo</a>
+        </figure>
+
+        <figure class="screen-card">
+          <img src="assets/marketing-screenshots/desktop-05-facturation.png"
+               alt="Facturation dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>Facturation</figcaption>
+          <a href="contact.html" class="screen-link">Voir en démo</a>
+        </figure>
+
+        <figure class="screen-card">
+          <img src="assets/marketing-screenshots/desktop-06-stock-vente.png"
+               alt="Stock et ventes dans Atelier Pro"
+               loading="lazy" decoding="async">
+          <figcaption>Stock et ventes</figcaption>
+          <a href="contact.html" class="screen-link">Voir en démo</a>
+        </figure>
+      </div>
+
+      <div class="mobile-screens">
+        <figure>
+          <a href="contact.html" class="mobile-screen-link" aria-label="Demander une démo de l’écran de connexion mobile">
+            <img src="assets/marketing-screenshots/mobile-00-connexion.png"
+                 alt="Écran de connexion mobile Atelier Pro"
+                 loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <figure>
+          <a href="contact.html" class="mobile-screen-link" aria-label="Demander une démo des commandes mobile">
+            <img src="assets/marketing-screenshots/mobile-02-commandes.png"
+                 alt="Commandes mobile Atelier Pro"
+                 loading="lazy" decoding="async">
+          </a>
+        </figure>
+        <figure>
+          <a href="contact.html" class="mobile-screen-link" aria-label="Demander une démo de la caisse mobile">
+            <img src="assets/marketing-screenshots/mobile-04-caisse.png"
+                 alt="Caisse mobile Atelier Pro"
+                 loading="lazy" decoding="async">
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefit-section">
+    <div class="container benefit-grid">
+      <div>
+        <span class="section-kicker">Impact métier</span>
+        <h2>Un outil pensé pour les vrais problèmes des ateliers.</h2>
+        <p>
+          Atelier Pro ne cherche pas à compliquer la gestion. Il remplace les oublis,
+          les papiers dispersés et les comptes difficiles à suivre par une interface
+          claire, moderne et exploitable chaque jour.
+        </p>
+      </div>
+
+      <div class="benefit-stack">
+        <article>
+          <strong>Moins d’oublis</strong>
+          <span>Les commandes et retouches restent visibles jusqu’à la livraison.</span>
+        </article>
+        <article>
+          <strong>Plus de contrôle</strong>
+          <span>La caisse, les avances et les paiements sont suivis proprement.</span>
+        </article>
+        <article>
+          <strong>Meilleure image</strong>
+          <span>Vos clients sentent une organisation plus sérieuse et moderne.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Pourquoi Atelier Pro</span>
+        <h2>Conçu pour les ateliers qui veulent mieux s’organiser sans complexité.</h2>
+      </div>
+
+      <div class="why-grid">
+        <article>
+          <span></span>
+          <h3>Moins de pertes</h3>
+          <p>Les commandes, avances et livraisons sont centralisées au même endroit.</p>
+        </article>
+        <article>
+          <span></span>
+          <h3>Meilleur suivi</h3>
+          <p>Chaque retouche ou commande peut être suivie avec des statuts clairs.</p>
+        </article>
+        <article>
+          <span></span>
+          <h3>Hors ligne</h3>
+          <p>L’atelier peut continuer à travailler même quand la connexion est faible.</p>
+        </article>
+        <article>
+          <span></span>
+          <h3>Tableaux de bord</h3>
+          <p>Le responsable garde une vue claire sur l’activité, la caisse et les délais.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container final-cta-inner">
+      <span class="section-kicker">Démonstration</span>
+      <h2>Voyez Atelier Pro en action.</h2>
+      <p>Contactez VolcanoTech pour planifier une démo et vérifier si Atelier Pro correspond à votre atelier.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-light">Demander une démo</a>
+        <a href="https://wa.me/243977712959" class="btn btn-dark" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-section">
+      <a href="index.html" class="footer-logo-link" aria-label="Retour à l’accueil VolcanoTech">
+        <img src="assets/images/volcanotech-logo-optimized.png" alt="VolcanoTech" class="footer-logo" loading="lazy" decoding="async">
+      </a>
+      <p>Atelier Pro est le produit phare de VolcanoTech pour les ateliers de couture.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="atelier-pro.html">Atelier Pro</a></li>
+        <li><a href="a_propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email : contact@volcanotech.cd</p>
+      <p>WhatsApp : +243 97 771 29 59</p>
+      <p>Lubumbashi, RDC</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VolcanoTech. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

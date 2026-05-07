@@ -1,0 +1,16 @@
+{
+  "name": "VolcanoTech",
+  "short_name": "VolcanoTech",
+  "description": "Solutions digitales modernes pour les entreprises locales.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff5722",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
