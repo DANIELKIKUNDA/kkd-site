@@ -3,19 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VolcanoTech | Atelier Pro</title>
-  <meta name="description" content="Atelier Pro est l'application offline-first de VolcanoTech pour gérer les ateliers de couture : commandes, retouches, caisse, dossiers clients et tableaux de bord.">
+  <title>AtelierPro | Logiciel de gestion pour atelier de couture</title>
+  <meta name="description" content="AtelierPro est le logiciel VolcanoTech pour gérer un atelier de couture : commandes, retouches, caisse, clients, stock, rôles équipe et tableaux de bord.">
+  <link rel="canonical" href="https://volcanotech.app/atelier-pro.html">
   <meta name="theme-color" content="#ff5722">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Atelier Pro | Gestion d'atelier couture offline-first">
-  <meta property="og:description" content="Commandes, retouches, caisse, clients, stock et tableaux de bord dans une application moderne pour atelier de couture.">
-  <meta property="og:image" content="assets/ksg-final/desktop-01-dashboard-proprietaire.png">
+  <meta property="og:url" content="https://volcanotech.app/atelier-pro.html">
+  <meta property="og:site_name" content="VolcanoTech">
+  <meta property="og:title" content="AtelierPro | Logiciel de gestion pour atelier de couture">
+  <meta property="og:description" content="Commandes, retouches, caisse, dossiers clients, stock et tableaux de bord dans une application moderne pour ateliers de couture.">
+  <meta property="og:image" content="https://volcanotech.app/assets/ksg-final/desktop-01-dashboard-proprietaire.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AtelierPro | Logiciel de gestion pour atelier de couture">
+  <meta name="twitter:description" content="Une solution moderne pour suivre commandes, caisse, clients, stock et équipes dans un atelier de couture.">
+  <meta name="twitter:image" content="https://volcanotech.app/assets/ksg-final/desktop-01-dashboard-proprietaire.png">
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/pages/atelier-pro.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://volcanotech.app/#organization",
+          "name": "VolcanoTech",
+          "url": "https://volcanotech.app/",
+          "logo": "https://volcanotech.app/assets/images/volcanotech-logo-optimized.png",
+          "areaServed": "CD",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+243977712959",
+            "contactType": "customer support",
+            "areaServed": "CD",
+            "availableLanguage": ["fr"]
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://volcanotech.app/atelier-pro.html#software",
+          "name": "AtelierPro",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, Mobile",
+          "description": "Logiciel de gestion pour ateliers de couture : commandes, retouches, caisse, dossiers clients, stock, rôles équipe et tableaux de bord.",
+          "image": "https://volcanotech.app/assets/ksg-final/desktop-01-dashboard-proprietaire.png",
+          "publisher": {
+            "@id": "https://volcanotech.app/#organization"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://volcanotech.app/atelier-pro.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "AtelierPro fonctionne-t-il sans connexion internet stable ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AtelierPro est pensé pour les réalités locales et les connexions instables. Les workflows essentiels restent simples à utiliser, avec une approche offline-first selon la configuration du projet."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "AtelierPro fonctionne-t-il sur téléphone ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. L'interface est mobile-first et adaptée aux responsables, caissiers et couturiers qui travaillent souvent depuis un téléphone."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quelles parties de l'atelier peut-on gérer ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AtelierPro permet de suivre les commandes, retouches, dossiers clients, caisse, paiements, stock, ventes et tableaux de bord."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "VolcanoTech accompagne-t-il l'installation et la formation ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. VolcanoTech accompagne la prise en main afin que l'équipe comprenne les rôles, les écrans et les habitudes de gestion à adopter."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
 <header class="header">
@@ -220,6 +306,38 @@
         <article><strong>Moins d'oublis</strong><span>Les commandes et retouches restent visibles jusqu'à la livraison.</span></article>
         <article><strong>Plus de contrôle</strong><span>La caisse, les avances et les paiements sont suivis proprement.</span></article>
         <article><strong>Meilleure image</strong><span>Vos clients sentent une organisation plus sérieuse et moderne.</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Questions fréquentes</span>
+        <h2>Les réponses rapides avant de demander une démo.</h2>
+        <p>Une FAQ courte pour clarifier les points importants sans alourdir la page.</p>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary>AtelierPro fonctionne-t-il avec une connexion instable ?</summary>
+          <p>Oui. Le produit est pensé pour les réalités locales et les connexions faibles, avec une logique offline-first selon la configuration déployée.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Peut-on utiliser AtelierPro sur téléphone ?</summary>
+          <p>Oui. L'expérience est mobile-first pour permettre au responsable, au caissier ou au couturier de travailler facilement sur mobile.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Qu'est-ce que l'application permet de gérer ?</summary>
+          <p>Commandes, retouches, caisse, dossiers clients, paiements, stock, ventes, rôles équipe et tableaux de bord.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Est-ce adapté à un petit atelier qui commence ?</summary>
+          <p>Oui. AtelierPro peut aider un petit atelier à mieux s'organiser, puis évoluer avec l'activité quand les besoins grandissent.</p>
+        </details>
+        <details class="faq-item">
+          <summary>VolcanoTech accompagne-t-il la formation ?</summary>
+          <p>Oui. L'objectif est que l'équipe sache utiliser les écrans importants et adopte progressivement une gestion plus claire.</p>
+        </details>
       </div>
     </div>
   </section>
