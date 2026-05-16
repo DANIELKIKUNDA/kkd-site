@@ -4,7 +4,6 @@
   padding: 0 var(--spacing-md);
 }
 
-/* HEADER */
 .header {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -24,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; /* Conserver une hauteur fixe pour la navbar */
+  height: 70px;
 }
 
 .logo {
@@ -63,10 +62,9 @@
 }
 
 .navbar .btn {
-  margin-left: var(--spacing-md); /* Espace entre le menu et le bouton */
+  margin-left: var(--spacing-md);
 }
 
-/* FOOTER */
 .footer {
   background-color: var(--color-dark);
   color: var(--color-light);
@@ -83,7 +81,7 @@
 
 .footer-section {
   flex: 1;
-  min-width: 200px; /* Pour éviter que les sections ne soient trop petites */
+  min-width: 200px;
 }
 
 .footer-section h3,
@@ -100,7 +98,7 @@
 .footer-section ul a {
   color: var(--color-light);
   text-decoration: none;
-  margin-bottom: 8px; /* Espacement entre les liens */
+  margin-bottom: 8px;
   display: block;
 }
 
@@ -115,18 +113,11 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* =========================
-   RESPONSIVE GLOBAL
-   ========================= */
-
 @media (max-width: 768px) {
-
-  /* Conteneur */
   .container {
     padding: 0 var(--spacing-sm);
   }
 
-  /* NAVBAR */
   .navbar {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -149,7 +140,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: var(--spacing-sm);
-    gap: 0; /* Pas d'écart entre les éléments de menu empilés */
+    gap: 0;
     grid-column: 1 / -1;
     display: none;
   }
@@ -160,8 +151,8 @@
   }
 
   .menu a {
-    padding: var(--spacing-sm) 0; /* Padding pour les liens de menu */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Séparateur */
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .menu li:last-child a {
@@ -181,7 +172,6 @@
     display: flex;
   }
 
-  /* FOOTER */
   .footer-content {
     flex-direction: column;
     text-align: center;

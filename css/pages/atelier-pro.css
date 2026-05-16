@@ -110,7 +110,7 @@ body {
 }
 
 .nav-more-toggle::after {
-  content: "⌄";
+  content: "v";
   font-size: 0.8rem;
   line-height: 1;
 }
@@ -156,7 +156,7 @@ body {
 }
 
 .nav-submenu a::after {
-  content: "→";
+  content: "->";
   opacity: 0;
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
@@ -673,7 +673,7 @@ a.mobile-frame:focus-visible {
 .inline-card-link::after,
 .card-link::after,
 .screen-link::after {
-  content: "→";
+  content: "->";
   font-weight: 900;
   transition: transform 0.2s ease;
 }
@@ -1599,7 +1599,7 @@ a.mobile-frame:focus-visible {
 
   .mobile-more-links a::after {
     color: var(--vt-orange-dark);
-    content: "→";
+    content: "->";
     font-weight: 900;
   }
 
