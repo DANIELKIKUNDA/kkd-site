@@ -116,19 +116,20 @@
 
 .social-link {
   align-items: center;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid transparent;
   border-radius: 999px;
-  color: var(--color-white);
+  color: #fff;
   display: inline-flex;
   height: 44px;
   justify-content: center;
   text-decoration: none;
-  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
   width: 44px;
 }
 
 .social-link:hover {
+  filter: brightness(1.04);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
   transform: translateY(-2px);
 }
 
@@ -138,22 +139,16 @@
   width: 18px;
 }
 
-.social-whatsapp:hover {
-  background: rgba(37, 211, 102, 0.14);
-  border-color: rgba(37, 211, 102, 0.34);
-  color: #25d366;
+.social-whatsapp {
+  background: #25d366;
 }
 
-.social-facebook:hover {
-  background: rgba(24, 119, 242, 0.14);
-  border-color: rgba(24, 119, 242, 0.34);
-  color: #1877f2;
+.social-facebook {
+  background: #1877f2;
 }
 
-.social-linkedin:hover {
-  background: rgba(10, 102, 194, 0.14);
-  border-color: rgba(10, 102, 194, 0.34);
-  color: #0a66c2;
+.social-linkedin {
+  background: #0a66c2;
 }
 
 .whatsapp-float {
