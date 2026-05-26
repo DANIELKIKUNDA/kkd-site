@@ -192,6 +192,10 @@
   white-space: nowrap;
 }
 
+.scroll-toggle {
+  display: none;
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: var(--spacing-lg);
@@ -288,5 +292,54 @@
 
   .whatsapp-float-text {
     display: none;
+  }
+
+  .scroll-toggle {
+    align-items: center;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%) translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    width: 48px;
+    z-index: 1095;
+  }
+
+  .scroll-toggle.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .scroll-toggle:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  }
+
+  .scroll-toggle-icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .scroll-toggle-icon svg {
+    fill: currentColor;
+    height: 20px;
+    transition: transform 0.2s ease;
+    width: 20px;
+  }
+
+  .scroll-toggle[data-direction="up"] .scroll-toggle-icon svg {
+    transform: rotate(180deg);
   }
 }

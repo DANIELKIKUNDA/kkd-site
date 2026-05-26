@@ -188,3 +188,90 @@ if (!document.querySelector('.whatsapp-float')) {
   `;
   document.body.appendChild(floatButton);
 }
+
+// Mobile scroll toggle CTA
+if (!document.querySelector('.scroll-toggle') && document.querySelector('main')) {
+  const scrollButton = document.createElement('button');
+  scrollButton.type = 'button';
+  scrollButton.className = 'scroll-toggle';
+  scrollButton.setAttribute('aria-label', 'Descendre dans la page');
+  scrollButton.innerHTML = `
+    <span class="scroll-toggle-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M12 16.6 5.7 10.3l1.4-1.4 4.9 4.9 4.9-4.9 1.4 1.4Z"></path>
+      </svg>
+    </span>
+  `;
+  document.body.appendChild(scrollButton);
+
+  const sections = Array.from(document.querySelectorAll('main section'));
+  let scrollMode = 'down';
+
+  const setScrollMode = (mode) => {
+    if (scrollMode === mode) return;
+    scrollMode = mode;
+    scrollButton.dataset.direction = mode;
+    scrollButton.setAttribute(
+      'aria-label',
+      mode === 'up' ? 'Remonter en haut de la page' : 'Descendre dans la page',
+    );
+  };
+
+  const findNextSection = () => {
+    const offset = window.scrollY + window.innerHeight * 0.45;
+    return sections.find((section) => section.offsetTop > offset) || null;
+  };
+
+  const updateScrollButton = () => {
+    const doc = document.documentElement;
+    const docHeight = doc.scrollHeight;
+    const viewportHeight = window.innerHeight;
+    const scrollTop = window.scrollY;
+    const remaining = docHeight - (scrollTop + viewportHeight);
+    const hasScrollablePage = docHeight - viewportHeight > 140;
+
+    scrollButton.classList.toggle('is-visible', hasScrollablePage);
+    if (!hasScrollablePage) return;
+
+    const nearTop = scrollTop < 120;
+    const nearBottom = remaining < 180;
+    const nextSection = findNextSection();
+
+    if (nearBottom || !nextSection) {
+      setScrollMode('up');
+      return;
+    }
+
+    if (nearTop || nextSection) {
+      setScrollMode('down');
+    }
+  };
+
+  scrollButton.addEventListener('click', () => {
+    const headerOffset = document.querySelector('.header')?.offsetHeight || 0;
+
+    if (scrollMode === 'up') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const nextSection = findNextSection();
+    if (nextSection) {
+      const top = Math.max(0, nextSection.offsetTop - headerOffset - 12);
+      window.scrollTo({ top, behavior: 'smooth' });
+      return;
+    }
+
+    window.scrollTo({
+      top: Math.min(
+        document.documentElement.scrollHeight - window.innerHeight,
+        window.scrollY + window.innerHeight * 0.9,
+      ),
+      behavior: 'smooth',
+    });
+  });
+
+  window.addEventListener('scroll', updateScrollButton, { passive: true });
+  window.addEventListener('resize', updateScrollButton);
+  updateScrollButton();
+}
