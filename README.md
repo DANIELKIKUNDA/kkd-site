@@ -6,6 +6,8 @@ Site vitrine officiel de VolcanoTech, entreprise technologique qui développe de
 
 **Atelier Pro** : application de gestion d’atelier de couture offline-first.
 
+**Horaire Pro Studio** : logiciel Windows pour préparer et contrôler les horaires scolaires. La page `horaire-pro.html` renvoie vers l'installateur vérifié publié dans les versions GitHub du projet Horaire Pro.
+
 ## Technologies
 
 - HTML5

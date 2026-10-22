@@ -84,6 +84,7 @@ const mobileNavItems = [
 ];
 
 const mobileMoreItems = [
+  { href: 'horaire-pro.html', label: 'Horaire Pro' },
   { href: 'a_propos.html', label: 'A propos' },
   { href: 'projets.html', label: 'Projets' },
   { href: 'ressources.html', label: 'Ressources' },
